@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProdList from "../components/ProdList";
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Wincor-Nixdorf" description="ATM Vendor Manufacturer">
+    <ProdList client:load/>
+</Layout>
+<div class="fixed-bottom">
+	<Footer/>
+</div>

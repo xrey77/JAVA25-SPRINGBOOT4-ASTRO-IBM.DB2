@@ -1,0 +1,18 @@
+---
+import LoginForm from '../components/LoginForm';
+---
+
+<div class="container">
+    <LoginForm/>
+</div>
+<button id="mfa" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticLogin"></button>
+
+<script>
+    import jQuery from 'jquery';
+    // This script runs on the client-side.
+    document.addEventListener('DOMContentLoaded', () => {
+        jQuery("#mfa").trigger("click");
+    });
+  </script>
+
+

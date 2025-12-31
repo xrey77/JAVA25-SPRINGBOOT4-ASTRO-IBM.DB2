@@ -1,0 +1,44 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ProdSearch from "../components/ProdSearch";
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Wincor-Nixdorf" description="ATM Vendor Manufacturer">
+    <ProdSearch client:load/>
+    <div id="opt1" >
+        <Footer/>        
+    </div>
+
+</Layout>
+
+
+<script>
+    import { $totalrecords } from "../store";
+    import $ from "jquery";
+
+
+        $totalrecords.subscribe(value => {
+
+            if (value > 0) {
+                $("#opt1").css({
+                    "position": "relative",
+                    "width": "100%",
+                    "margin": "0",
+                });
+
+            } else {
+                
+                $("#opt1").css({
+                    "position": "fixed",
+                    "width": "100%",
+                    "margin": "0",
+                    "bottom": "0"        
+                });
+
+            }
+
+        });
+
+</script>
+

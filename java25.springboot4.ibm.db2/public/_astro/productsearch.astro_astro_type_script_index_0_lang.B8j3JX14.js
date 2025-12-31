@@ -1,0 +1,1 @@
+import{$ as t}from"./store.B2KCumWl.js";import{$ as i}from"./jquery.CUqvW-kL.js";import"./_commonjsHelpers.CqkleIqs.js";t.subscribe(o=>{o>0?i("#opt1").css({position:"relative",width:"100%",margin:"0"}):i("#opt1").css({position:"fixed",width:"100%",margin:"0",bottom:"0"})});
